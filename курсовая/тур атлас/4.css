@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #585858;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+header {
+  background: #006d77;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+main {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+.base-map {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #444;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+}
+
+.hover-area {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transition: background 0.2s;
+  z-index: 10;
+}
+
+.hover-area:hover {
+  opacity: 0.2;
+  background: #fff;
+}
+
+/* Координаты и размеры областей */
+.mongolia {
+  top: 40%;
+  left: 2%;
+  width: 12%;
+  height: 5%;
+}
+.china {
+  top: 45%;
+  left: 14%;
+  width: 10%;
+  height: 15%;
+}
+.india {
+  top: 23%;
+  left: 25%;
+  width: 40%;
+  height: 18%;
+}
+.thailand {
+  top: 30%;
+  left: 2%;
+  width: 8%;
+  height: 8%;
+}
+
+.map-description {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 600px;
+  color: #ccc;
+}
+
+footer {
+  background: #023047;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-content div {
+  max-width: 300px;
+}
+
+.footer-content h3,
+.footer-content h4 {
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+}

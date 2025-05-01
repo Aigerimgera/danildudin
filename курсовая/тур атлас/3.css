@@ -1,0 +1,245 @@
+/* Общие стили для страницы "О нас" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+header {
+  background: #006d77;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+/* Стили для секции "О нас" */
+.about {
+  padding: 60px 0;
+}
+
+.about h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mission, .team, .values, .contact-info {
+  margin-bottom: 40px;
+}
+
+.mission h3, .team h3, .values h3, .contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+  flex: 1 1 250px;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.member p {
+  font-size: 14px;
+  color: #555;
+}
+
+.values ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.values li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+}
+
+/* Стили для футера */
+footer {
+  background: #023047;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-content div {
+  max-width: 300px;
+}
+
+.footer-content h3,
+.footer-content h4 {
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .mission h3, .team h3, .values h3, .contact-info h3 {
+    font-size: 20px;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-content div {
+    max-width: 100%;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about p {
+    font-size: 12px;
+  }
+
+  .member h4 {
+    font-size: 16px;
+  }
+
+  .member p {
+    font-size: 12px;
+  }
+
+  .footer-content h3,
+  .footer-content h4 {
+    font-size: 18px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+
+  .mission h3, .team h3, .values h3 {
+    font-size: 18px;
+  }
+
+  .team-members {
+    gap: 15px;
+  }
+
+  .member {
+    margin-bottom: 20px;
+  }
+}
+
+  
